@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 3</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id='container'>
+		<video id='gum' autoplay muted playsinline></video>
+		<video id='recorded' playsinline loop></video>
+		<video id='share' autoplay muted playsinline></video>
+		<section>
+			<button id='start'>Start camera</button>
+			<button id='record' disabled>Record</button>
+			<button id='play' disabled>Play</button>
+			<button id='download' disabled>Download</button>
+			<button id='screenshare' disabled>Screenshare</button>
+			<button id='snapshot' disabled>Take snapshot</button>
+			<label for='filter'>Filter: </label>
+			<select id='filter'>
+				<option value='none'>None</option>
+				<option value='blur'>Blur</option>
+				<option value='grayscale'>Gracescale</option>
+				<option value='invert'>Invert</option>
+				<option value='sepia'>Sepia</option>
+			</select>
+		</section>
+		<canvas></canvas>
+	</div>
+
+
+	<script src="js/playground.js"></script>
+</body>
+</html>
